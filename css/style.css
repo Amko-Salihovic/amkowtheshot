@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Cantarell', sans-serif;
+}
+header{
+    width: 100%;
+    background-color: transparent;
+}
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 9999;
+}
+.mobile-nav {
+    flex-direction: column;
+    text-align: center;
+    height: 30vh;
+    display: none;
+    transition: ease 1.5s all;
+}
+@media only screen and (max-width: 375px) {
+    #menu-btn, .navbar-collapse {
+        display: block;
+    }
+}
+
+#menu-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    height: 40px; width: 70px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    display: none;
+    background-color: transparent;
+}
+#menu-btn a{
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navbar-collapse{
+
+    padding: 100px;
+}
+.mobile-nav-list{
+    list-style: none;
+    transition: ease 1.5s all;
+}
+.mobile-nav-link a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+}
+@supports (-webkit-text-stroke: 1px whitesmoke) {
+    .mobile-nav-link a:hover{
+     -webkit-text-stroke: 1px whitesmoke;
+     -webkit-text-fill-color: transparent;
+     font-style: oblique;
+   } 
+ }
+
+.mobile-social {
+    flex-direction: row;
+    margin-top: 30px;
+}
+.mobile-nav-link-social a{
+    font-size: 18px;
+}
+
+
+.nav-list, .nav-list-social{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+}
+.nav-list a, .nav-list-social a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav-link a:hover{
+    -webkit-text-stroke: 1px whitesmoke;
+    -webkit-text-fill-color: transparent;
+    font-style: oblique;
+    cursor: pointer;
+}
+.social-links {
+    position: absolute;
+    top: 0; right: 0;
+    margin: 20px;
+}
+.nav-link-social {
+    margin-right: 40px;
+    font-size: 40px;
+}
+#logo {
+    font-size: 40px;
+}
+#street, #portrait, #contact {
+    margin-left: 80px;
+    font-size: 23px;
+}
+@media only screen and (max-width: 875px) {
+    .nav-link a, .nav-link-social{
+        font-size: 30px;
+    }
+    #logo {
+        font-size: 30px;
+    }
+    #street, #portrait, #contact {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #menu-btn {
+        display: flex;
+    }
+    .nav-link a, .nav-link-social{
+        display: none;
+    }
+    #logo {
+        display: inline;
+        font-size: 30px;
+    }
+    #street, #portrait, #contact {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    #logo {
+        display: inline;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-left: 75px;
+}
+.title .heading {
+    font-size: 50px;
+    z-index: 9999;
+}
+
+@supports (-webkit-text-stroke: 2px whitesmoke) {
+    .heading h1:hover{
+     -webkit-text-stroke: 2px whitesmoke;
+     -webkit-text-fill-color: transparent;
+     font-style: oblique;
+     cursor: pointer;
+   } 
+ }
+.title .subheading {
+    font-size: 24px;
+    margin-top: 50px;
+    z-index: 9999;    
+}
+.title .buttons {
+    font-size: 30px;
+    margin-top: 80px;
+    z-index: 9999;
+}
+.title .buttons a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+.title .buttons a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+@media only screen and (max-width: 1024px){
+    .title {
+        margin-left: 50px;
+    }
+    .title .heading {
+        font-size: 35px;
+    }
+    .title .subheading {
+        font-size: 18px;
+        margin-top: 25px;    
+    }
+    .title .buttons{
+        font-size: 22px;
+        margin-top: 35px;    
+    }
+}
+@media only screen and (max-width: 768px){
+    .title {
+        margin-left: 20px;
+        height: 110vh;
+        
+    }
+    .title .heading{
+        font-size: 30px;
+    }
+    .title .subheading {
+        margin-top: 20px;
+        width: 40vh;
+        line-height: 30px;
+    }
+    .title .buttons {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 414px){
+    .title {
+        margin-left: 20px;
+    }
+    .img-1, .img-2, .img-3 {
+        display: none;
+    }
+    .bg {
+        background: url('../images/portrait/sanel_bokeh.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 375px){
+    .title {
+        margin-left: 20px;
+    }
+    .img-1, .img-2, .img-3 {
+        display: none;
+    }
+    .bg {
+        background: url('../images/portrait/sanel_bokeh.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.img-1 {
+    position: absolute;
+    top: -20px; right: 380px;
+    background: url('../images/portrait/sanel_bokeh.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 600px;
+}
+@media only screen and (max-width: 1024px) {
+    .img-1 {
+        top: -20px; left: 0;
+        width: 650px;
+        height: 700px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .img-1 {
+        width: 400px;
+        height: 450px;
+    }
+}
+.img-2 {
+    position: absolute;
+    top: -10px; right: 0;
+    background: url('../images/street/roofPOV.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+}
+@media only screen and (max-width: 1024px) {
+    .img-2 {
+        top: 130px;
+        width: 300px;
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .img-2 {
+        top: 0;
+        width: 250px;
+        height: 400px;
+    }
+}
+
+
+.img-3 {
+    position: absolute;
+    top: 710px; right: 0;
+    transform: translateY(-50%);
+    background: url('../images/street/wiz-reflection.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 600px;
+}
+@media only screen and (max-width: 1024px) {
+    .img-3 {
+        top: 82%;
+        width: 500px;
+        height: 650px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .img-3 {
+        top: 82%;
+        width: 400px;
+        height: 550px;
+    }
+}
+.img-4 {
+    position: absolute;
+    top: 85%; left: 0;
+    transform: translateY(-50%);
+    background: url('../images/street/brooklyn-bridge.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 400px;
+    display: none;
+}
+@media only screen and (max-width: 1024px) {
+    .img-4 {
+    top: 85%; left: 0;
+    transform: translateY(-50%);
+    height: 450px;
+    width: 400px;
+    display: block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .img-4 {
+    display: none;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    z-index: 999;
+   background: #03a3b0;
+}
+.first {
+    top: 0;
+}
+.second {
+    top: 33.3%;
+}
+.third {
+    top: 66.6%;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.hero-title h1 {
+    font-size: 70px;
+    -webkit-text-stroke: 2px whitesmoke;
+    -webkit-text-fill-color: transparent;
+    font-style: oblique;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form {
+    width: 750px;
+}
+.form input {
+    height: 70px;
+}
+.form input::placeholder, .form textarea::placeholder {
+    color:whitesmoke;
+    font-size: 20px;
+}
+.form textarea{ 
+    height: 100px;
+    font-size: 15px;
+    max-width: 100%;
+    min-width: 100%;
+    resize: none;
+}
+.form input, .form textarea, .form button{
+    font-family: 'Cantarell', sans-serif;
+    display: block;
+    margin-top: 35px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    border: solid 2px #03a3b0;
+    font-size: 25px;
+    transition: 1s ease; 
+}
+.form input:hover, .form textarea:hover {
+    border: solid 2px whitesmoke;
+}
+.form input:focus, .form textarea:focus {
+    box-shadow: 0 0 10px 5px whitesmoke;
+}
+.form button {
+    text-align: center;
+    background-color: #03a3b0;
+    color: black;
+    cursor: pointer;
+}
+.form button:hover {
+    background-color: whitesmoke;
+    border: solid 2px whitesmoke;
+    color: #03a3b0;
+}
+
+@media only screen and (max-width: 875px) {
+    .form {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .form {
+        width: 300px;
+    }
+    .form input {
+        height: 40px;
+    }
+    .form textarea {
+        height: 55px;
+    }
+    .form input, .form textarea, .form input::placeholder, .form textarea::placeholder {
+        font-size: 20px;
+    }
+    .form button {
+        font-size: 20px;
+        height: 40px;
+        padding: 5px;
+    }
+    .hero-title h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .form {
+        width: 350px;
+    }
+    .form input {
+        height: 45px;
+    }
+    .form textarea {
+        height: 65px;
+    }
+    .form input, .form textarea, .form input::placeholder, .form textarea::placeholder {
+        font-size: 22px;
+    }
+    .form button {
+        font-size: 22px;
+        height: 45px;
+        padding: 8px;
+    }
+    .hero-title h1 {
+        font-size: 55px;
+    }
+    .form-control small{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .form {
+        width: 300px;
+    }
+    .form input {
+        height: 38px;
+    }
+    .form textarea {
+        height: 58px;
+    }
+    .form input, .form textarea, .form input::placeholder, .form textarea::placeholder {
+        font-size: 20px;
+    }
+    .form button {
+        font-size: 20px;
+        height: 40px;
+        padding: 5px;
+    }
+    .hero-title h1 {
+        font-size: 50px;
+    }
+}
+
+.form-control.success input, .form-control.success textarea{
+    border-color: #2ecc71;
+}
+.form-control.error input, .form-control.success textarea {
+    border-color: #e74c3c;
+}
+.form-control small{
+    color: #e74c3c;
+    font-size: 25px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}

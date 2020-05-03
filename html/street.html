@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amko with the Shot | Street</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo.jpg" type = "image/x-icon"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-link">
+                    <a href="../index.html" id="logo">A M K O</a>
+                </li>
+                <li class="nav-link">
+                    <a href="../html/street.html" id="street">Street</a>
+                </li>
+                <li class="nav-link">
+                    <a href="../html/portrait.html" id="portrait">Portrait</a>
+
+                </li>
+                <li class="nav-link">
+                    <a href="../html/contact.html" id="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <ul class="nav-list-social">
+                <li class="nav-link-social">
+                    <a href="https://www.instagram.com/amko.with.the.shot/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-link-social">
+                    <a href="mailto:amkosali99@gmail.com?subject=Mail from Photo Site" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <button id="menu-btn">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">M E N U</a>
+        </button>
+
+        <div class="mobile-nav">
+
+            <div class="navbar-collapse">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-link">
+                        <a href="../html/street.html" id="mobile-street">Street</a>
+                    </li>
+                    <li class="mobile-nav-link">
+                        <a href="../html/portrait.html" id="mobile-port">Portrait</a>
+                    </li>
+                    <li class="mobile-nav-link">
+                        <a href="../html/contact.html" id="mobile-contact">Contact</a>
+                    </li>
+                    <div class="mobile-social">
+                        <li class="mobile-nav-link mobile-nav-link-social">
+                            <a href="https://www.instagram.com/amko.with.the.shot/" target="_blank"
+                                id="mobile-instagram">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="mobile-nav-link mobile-nav-link-social">
+                            <a href="mailto:amkosali99@gmail.com?subject=Mail from Photo Site" target="_blank"
+                                id="mobile-email">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <div class="img">
+                <img src="../images/street/brooklyn-bridge.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/skaterbw.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/danger.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/carrierdome.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/andyrailing.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/AXA.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/emergency.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/ladder_roof.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/revolvingdoor.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/roof_edge.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/roofPOV.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/skatersun.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/rooftop_street.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/sky.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/standingedge.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="../images/street/wiz-reflection.jpg" alt="">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="../js/main.js"></script> 
+    <script>
+        function myFunction() {
+            var x = document.querySelector('.mobile-nav');
+            var y = document.querySelector('.mobile-nav-list');
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
